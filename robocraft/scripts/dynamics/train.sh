@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-python train.py \
+pyana3p train.py \
 	--stage dy \
 	--data_type ngrip_fixed \
 	--n_epoch 20 \

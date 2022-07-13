@@ -13,8 +13,8 @@ sys.path.insert(1, dynamics_path)
 
 # for gnn models
 import torch
-from utils import load_data, get_scene_info, get_env_group, prepare_input
-from model import EarthMoverLoss, ChamferLoss, HausdorffLoss
+from robocraft.utils import load_data, get_scene_info, get_env_group, prepare_input
+from robocraft.model import EarthMoverLoss, ChamferLoss, HausdorffLoss
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 

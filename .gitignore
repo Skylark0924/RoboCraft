@@ -1,0 +1,11 @@
+
+robocraft/__pycache__/
+
+robocraft/dump/dump_ngrip_fixed/out_06-Jul-2022-09:43:41.018933/
+robocraft/dump
+robocraft/dataset
+simulator/dataset
+
+*.pyc
+
+.idea/

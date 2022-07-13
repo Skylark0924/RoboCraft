@@ -26,7 +26,7 @@ parser.add_argument('--matched_motion', type=int, default=0)
 parser.add_argument('--matched_motion_weight', type=float, default=0.0)
 
 parser.add_argument('--valid', type=int, default=0)
-parser.add_argument('--eval', type=int, default=0)
+parser.add_argument('--eval', type=int, default=1)
 parser.add_argument('--verbose_data', type=int, default=0)
 parser.add_argument('--verbose_model', type=int, default=0)
 parser.add_argument('--eps', type=float, default=1e-6)
@@ -64,7 +64,7 @@ parser.add_argument('--vis_height', type=int, default=120)
 '''
 train
 '''
-parser.add_argument('--data_type', type=str, default='none')
+parser.add_argument('--data_type', type=str, default='ngrip_fixed')
 parser.add_argument('--gt_particles', type=int, default=0)
 parser.add_argument('--shape_aug', type=int, default=1)
 
@@ -78,13 +78,13 @@ parser.add_argument('--p_rigid', type=float, default=1.0)
 parser.add_argument('--n_his', type=int, default=4)
 parser.add_argument('--sequence_length', type=int, default=6)
 
-parser.add_argument('--n_rollout', type=int, default=0)
+parser.add_argument('--n_rollout', type=int, default=5)
 parser.add_argument('--train_valid_ratio', type=float, default=0.9)
 parser.add_argument('--num_workers', type=int, default=4)
 parser.add_argument('--log_per_iter', type=int, default=100)
-parser.add_argument('--ckp_per_iter', type=int, default=1000)
+parser.add_argument('--ckp_per_iter', type=int, default=100)
 
-parser.add_argument('--n_epoch', type=int, default=100) # 100 FOR TEST, *1000* 
+parser.add_argument('--n_epoch', type=int, default=20) # 100 FOR TEST, *1000*
 parser.add_argument('--beta1', type=float, default=0.9)
 parser.add_argument('--lr', type=float, default=0.0001)
 parser.add_argument('--optimizer', default='Adam', help='Adam|SGD')
